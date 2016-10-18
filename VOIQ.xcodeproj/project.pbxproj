@@ -1,0 +1,822 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1768E968EA797B52E132DBB5 /* Pods_VOIQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADA11A6AADFB443DBD21C27 /* Pods_VOIQTests.framework */; };
+		66622245931EEFE05DABFCA0 /* Pods_VOIQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E39ECC92AE5C7B084B44B2A /* Pods_VOIQ.framework */; };
+		CFB643221DB67A26008C1BD6 /* VOIQ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFB643201DB67A26008C1BD6 /* VOIQ.xcdatamodeld */; };
+		CFB643241DB67A26008C1BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB643231DB67A26008C1BD6 /* Assets.xcassets */; };
+		CFB643271DB67A26008C1BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB643251DB67A26008C1BD6 /* LaunchScreen.storyboard */; };
+		CFB643321DB67A26008C1BD6 /* VOIQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643311DB67A26008C1BD6 /* VOIQTests.swift */; };
+		CFB643DF1DB67C4C008C1BD6 /* AlertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6433E1DB67C4C008C1BD6 /* AlertOperation.swift */; };
+		CFB643E11DB67C4C008C1BD6 /* BaseGroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643401DB67C4C008C1BD6 /* BaseGroupOperation.swift */; };
+		CFB643E91DB67C4C008C1BD6 /* GetPokemonsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643491DB67C4C008C1BD6 /* GetPokemonsOperation.swift */; };
+		CFB643ED1DB67C4C008C1BD6 /* LoadingIndicatorObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6434E1DB67C4C008C1BD6 /* LoadingIndicatorObserver.swift */; };
+		CFB643EF1DB67C4C008C1BD6 /* ParseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643501DB67C4C008C1BD6 /* ParseOperation.swift */; };
+		CFB643F81DB67C4C008C1BD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6435A1DB67C4C008C1BD6 /* AppDelegate.swift */; };
+		CFB643FA1DB67C4C008C1BD6 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6435C1DB67C4C008C1BD6 /* Protocols.swift */; };
+		CFB643FE1DB67C4C008C1BD6 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643661DB67C4C008C1BD6 /* AppConfiguration.swift */; };
+		CFB644001DB67C4C008C1BD6 /* FetchedResultsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643691DB67C4C008C1BD6 /* FetchedResultsDataProvider.swift */; };
+		CFB644031DB67C4C008C1BD6 /* TableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6436C1DB67C4C008C1BD6 /* TableViewDatasource.swift */; };
+		CFB644041DB67C4C008C1BD6 /* ApplicationStateObserving+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6436E1DB67C4C008C1BD6 /* ApplicationStateObserving+Additions.swift */; };
+		CFB644051DB67C4C008C1BD6 /* ContextObservable+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6436F1DB67C4C008C1BD6 /* ContextObservable+Additions.swift */; };
+		CFB644061DB67C4C008C1BD6 /* ManagedObjectConvertible+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643701DB67C4C008C1BD6 /* ManagedObjectConvertible+Additions.swift */; };
+		CFB644071DB67C4C008C1BD6 /* ModelConvertible+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643711DB67C4C008C1BD6 /* ModelConvertible+Additions.swift */; };
+		CFB644081DB67C4C008C1BD6 /* NSFetchedResultsController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643721DB67C4C008C1BD6 /* NSFetchedResultsController+Additions.swift */; };
+		CFB644091DB67C4C008C1BD6 /* NSManagedObjectContext+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643731DB67C4C008C1BD6 /* NSManagedObjectContext+Additions.swift */; };
+		CFB6440F1DB67C4C008C1BD6 /* URLCredentialStorage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643791DB67C4C008C1BD6 /* URLCredentialStorage+Additions.swift */; };
+		CFB644101DB67C4C008C1BD6 /* ViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6437A1DB67C4C008C1BD6 /* ViewController+Additions.swift */; };
+		CFB644161DB67C4C008C1BD6 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643871DB67C4C008C1BD6 /* Server.swift */; };
+		CFB644191DB67C4C008C1BD6 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6438E1DB67C4C008C1BD6 /* ParameterEncoding.swift */; };
+		CFB6441A1DB67C4C008C1BD6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB643901DB67C4C008C1BD6 /* Utils.swift */; };
+		CFB6444F1DB67D55008C1BD6 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6444E1DB67D55008C1BD6 /* Pokemon.swift */; };
+		CFB644571DB680F4008C1BD6 /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB644561DB680F4008C1BD6 /* PokemonTableViewCell.swift */; };
+		CFB6445B1DB681EC008C1BD6 /* PokemonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB644591DB681EC008C1BD6 /* PokemonsViewController.swift */; };
+		CFB6445C1DB681EC008C1BD6 /* PokemonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB6445A1DB681EC008C1BD6 /* PokemonsViewController.xib */; };
+		CFB644601DB6880D008C1BD6 /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6445E1DB6880D008C1BD6 /* PokemonDetailViewController.swift */; };
+		CFB644611DB6880D008C1BD6 /* PokemonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB6445F1DB6880D008C1BD6 /* PokemonDetailViewController.xib */; };
+		CFB644641DB694CE008C1BD6 /* ValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB644631DB694CE008C1BD6 /* ValueTransformer.swift */; };
+		CFB644661DB6965B008C1BD6 /* GetSpritesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB644651DB6965B008C1BD6 /* GetSpritesOperation.swift */; };
+		CFB644681DB6972B008C1BD6 /* ParseGetSpriteOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB644671DB6972B008C1BD6 /* ParseGetSpriteOperation.swift */; };
+		CFB6446B1DB69A86008C1BD6 /* ContextObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6446A1DB69A86008C1BD6 /* ContextObserver.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFB6432E1DB67A26008C1BD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFB6430E1DB67A26008C1BD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFB643151DB67A26008C1BD6;
+			remoteInfo = VOIQ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DE9D9AAA89D287C8743DCF2 /* Pods-VOIQTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOIQTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VOIQTests/Pods-VOIQTests.release.xcconfig"; sourceTree = "<group>"; };
+		327E2E2F951AB7F570930A80 /* Pods-VOIQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOIQ.release.xcconfig"; path = "Pods/Target Support Files/Pods-VOIQ/Pods-VOIQ.release.xcconfig"; sourceTree = "<group>"; };
+		6ADA11A6AADFB443DBD21C27 /* Pods_VOIQTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOIQTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E39ECC92AE5C7B084B44B2A /* Pods_VOIQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VOIQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		996E2E820828166F3BCE4110 /* Pods-VOIQTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOIQTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VOIQTests/Pods-VOIQTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFB643161DB67A26008C1BD6 /* VOIQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOIQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB643211DB67A26008C1BD6 /* VOIQ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VOIQ.xcdatamodel; sourceTree = "<group>"; };
+		CFB643231DB67A26008C1BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFB643261DB67A26008C1BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFB643281DB67A26008C1BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB6432D1DB67A26008C1BD6 /* VOIQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOIQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB643311DB67A26008C1BD6 /* VOIQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIQTests.swift; sourceTree = "<group>"; };
+		CFB643331DB67A26008C1BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB6433E1DB67C4C008C1BD6 /* AlertOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertOperation.swift; sourceTree = "<group>"; };
+		CFB643401DB67C4C008C1BD6 /* BaseGroupOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGroupOperation.swift; sourceTree = "<group>"; };
+		CFB643491DB67C4C008C1BD6 /* GetPokemonsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPokemonsOperation.swift; sourceTree = "<group>"; };
+		CFB6434E1DB67C4C008C1BD6 /* LoadingIndicatorObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorObserver.swift; sourceTree = "<group>"; };
+		CFB643501DB67C4C008C1BD6 /* ParseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseOperation.swift; sourceTree = "<group>"; };
+		CFB6435A1DB67C4C008C1BD6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFB6435C1DB67C4C008C1BD6 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		CFB643661DB67C4C008C1BD6 /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		CFB643691DB67C4C008C1BD6 /* FetchedResultsDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedResultsDataProvider.swift; sourceTree = "<group>"; };
+		CFB6436C1DB67C4C008C1BD6 /* TableViewDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDatasource.swift; sourceTree = "<group>"; };
+		CFB6436E1DB67C4C008C1BD6 /* ApplicationStateObserving+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ApplicationStateObserving+Additions.swift"; sourceTree = "<group>"; };
+		CFB6436F1DB67C4C008C1BD6 /* ContextObservable+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContextObservable+Additions.swift"; sourceTree = "<group>"; };
+		CFB643701DB67C4C008C1BD6 /* ManagedObjectConvertible+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedObjectConvertible+Additions.swift"; sourceTree = "<group>"; };
+		CFB643711DB67C4C008C1BD6 /* ModelConvertible+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ModelConvertible+Additions.swift"; sourceTree = "<group>"; };
+		CFB643721DB67C4C008C1BD6 /* NSFetchedResultsController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFetchedResultsController+Additions.swift"; sourceTree = "<group>"; };
+		CFB643731DB67C4C008C1BD6 /* NSManagedObjectContext+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Additions.swift"; sourceTree = "<group>"; };
+		CFB643791DB67C4C008C1BD6 /* URLCredentialStorage+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLCredentialStorage+Additions.swift"; sourceTree = "<group>"; };
+		CFB6437A1DB67C4C008C1BD6 /* ViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Additions.swift"; sourceTree = "<group>"; };
+		CFB643871DB67C4C008C1BD6 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		CFB6438E1DB67C4C008C1BD6 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		CFB643901DB67C4C008C1BD6 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CFB6444E1DB67D55008C1BD6 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pokemon.swift; path = Pokemon/Pokemon.swift; sourceTree = "<group>"; };
+		CFB644561DB680F4008C1BD6 /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PokemonTableViewCell.swift; path = Pokemon/PokemonTableViewCell.swift; sourceTree = "<group>"; };
+		CFB644591DB681EC008C1BD6 /* PokemonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonsViewController.swift; sourceTree = "<group>"; };
+		CFB6445A1DB681EC008C1BD6 /* PokemonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PokemonsViewController.xib; sourceTree = "<group>"; };
+		CFB6445E1DB6880D008C1BD6 /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PokemonDetailViewController.swift; path = "Pokemon Detail/PokemonDetailViewController.swift"; sourceTree = "<group>"; };
+		CFB6445F1DB6880D008C1BD6 /* PokemonDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PokemonDetailViewController.xib; path = "Pokemon Detail/PokemonDetailViewController.xib"; sourceTree = "<group>"; };
+		CFB644631DB694CE008C1BD6 /* ValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueTransformer.swift; sourceTree = "<group>"; };
+		CFB644651DB6965B008C1BD6 /* GetSpritesOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSpritesOperation.swift; sourceTree = "<group>"; };
+		CFB644671DB6972B008C1BD6 /* ParseGetSpriteOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseGetSpriteOperation.swift; sourceTree = "<group>"; };
+		CFB6446A1DB69A86008C1BD6 /* ContextObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextObserver.swift; sourceTree = "<group>"; };
+		E5DD633E2634921B9897F45D /* Pods-VOIQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VOIQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VOIQ/Pods-VOIQ.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFB643131DB67A26008C1BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66622245931EEFE05DABFCA0 /* Pods_VOIQ.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB6432A1DB67A26008C1BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1768E968EA797B52E132DBB5 /* Pods_VOIQTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45FC1EF501EF986B8C85EFFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E39ECC92AE5C7B084B44B2A /* Pods_VOIQ.framework */,
+				6ADA11A6AADFB443DBD21C27 /* Pods_VOIQTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B022BE009490D881DC446C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5DD633E2634921B9897F45D /* Pods-VOIQ.debug.xcconfig */,
+				327E2E2F951AB7F570930A80 /* Pods-VOIQ.release.xcconfig */,
+				996E2E820828166F3BCE4110 /* Pods-VOIQTests.debug.xcconfig */,
+				0DE9D9AAA89D287C8743DCF2 /* Pods-VOIQTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CFB6430D1DB67A26008C1BD6 = {
+			isa = PBXGroup;
+			children = (
+				CFB643181DB67A26008C1BD6 /* VOIQ */,
+				CFB643301DB67A26008C1BD6 /* VOIQTests */,
+				CFB643171DB67A26008C1BD6 /* Products */,
+				9B022BE009490D881DC446C5 /* Pods */,
+				45FC1EF501EF986B8C85EFFC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFB643171DB67A26008C1BD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFB643161DB67A26008C1BD6 /* VOIQ.app */,
+				CFB6432D1DB67A26008C1BD6 /* VOIQTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFB643181DB67A26008C1BD6 /* VOIQ */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6433D1DB67C4C008C1BD6 /* App Operations */,
+				CFB643591DB67C4C008C1BD6 /* Base */,
+				CFB6435D1DB67C4C008C1BD6 /* Cells */,
+				CFB643651DB67C4C008C1BD6 /* Common Configuration */,
+				CFB643671DB67C4C008C1BD6 /* Datasource */,
+				CFB6436D1DB67C4C008C1BD6 /* Extensions */,
+				CFB6437B1DB67C4C008C1BD6 /* Models */,
+				CFB644691DB69A86008C1BD6 /* Observers */,
+				CFB6438D1DB67C4C008C1BD6 /* ParameterEncoding */,
+				CFB644621DB694CE008C1BD6 /* Transformer */,
+				CFB6438F1DB67C4C008C1BD6 /* Utils */,
+				CFB643911DB67C4C008C1BD6 /* Views */,
+				CFB643231DB67A26008C1BD6 /* Assets.xcassets */,
+				CFB643251DB67A26008C1BD6 /* LaunchScreen.storyboard */,
+				CFB643281DB67A26008C1BD6 /* Info.plist */,
+				CFB643201DB67A26008C1BD6 /* VOIQ.xcdatamodeld */,
+			);
+			path = VOIQ;
+			sourceTree = "<group>";
+		};
+		CFB643301DB67A26008C1BD6 /* VOIQTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFB643311DB67A26008C1BD6 /* VOIQTests.swift */,
+				CFB643331DB67A26008C1BD6 /* Info.plist */,
+			);
+			path = VOIQTests;
+			sourceTree = "<group>";
+		};
+		CFB6433D1DB67C4C008C1BD6 /* App Operations */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6434D1DB67C4C008C1BD6 /* Observers */,
+				CFB6433E1DB67C4C008C1BD6 /* AlertOperation.swift */,
+				CFB643401DB67C4C008C1BD6 /* BaseGroupOperation.swift */,
+				CFB643491DB67C4C008C1BD6 /* GetPokemonsOperation.swift */,
+				CFB644651DB6965B008C1BD6 /* GetSpritesOperation.swift */,
+				CFB643501DB67C4C008C1BD6 /* ParseOperation.swift */,
+				CFB644671DB6972B008C1BD6 /* ParseGetSpriteOperation.swift */,
+			);
+			path = "App Operations";
+			sourceTree = "<group>";
+		};
+		CFB6434D1DB67C4C008C1BD6 /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6434E1DB67C4C008C1BD6 /* LoadingIndicatorObserver.swift */,
+			);
+			path = Observers;
+			sourceTree = "<group>";
+		};
+		CFB643591DB67C4C008C1BD6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6435A1DB67C4C008C1BD6 /* AppDelegate.swift */,
+				CFB6435C1DB67C4C008C1BD6 /* Protocols.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CFB6435D1DB67C4C008C1BD6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CFB644551DB680D3008C1BD6 /* Pokemon */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CFB643651DB67C4C008C1BD6 /* Common Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CFB643661DB67C4C008C1BD6 /* AppConfiguration.swift */,
+			);
+			path = "Common Configuration";
+			sourceTree = "<group>";
+		};
+		CFB643671DB67C4C008C1BD6 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				CFB643691DB67C4C008C1BD6 /* FetchedResultsDataProvider.swift */,
+				CFB6436C1DB67C4C008C1BD6 /* TableViewDatasource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		CFB6436D1DB67C4C008C1BD6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6436E1DB67C4C008C1BD6 /* ApplicationStateObserving+Additions.swift */,
+				CFB6436F1DB67C4C008C1BD6 /* ContextObservable+Additions.swift */,
+				CFB643701DB67C4C008C1BD6 /* ManagedObjectConvertible+Additions.swift */,
+				CFB643711DB67C4C008C1BD6 /* ModelConvertible+Additions.swift */,
+				CFB643721DB67C4C008C1BD6 /* NSFetchedResultsController+Additions.swift */,
+				CFB643731DB67C4C008C1BD6 /* NSManagedObjectContext+Additions.swift */,
+				CFB643791DB67C4C008C1BD6 /* URLCredentialStorage+Additions.swift */,
+				CFB6437A1DB67C4C008C1BD6 /* ViewController+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFB6437B1DB67C4C008C1BD6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6444D1DB67D3C008C1BD6 /* Pokemon */,
+				CFB643861DB67C4C008C1BD6 /* Server */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CFB643861DB67C4C008C1BD6 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				CFB643871DB67C4C008C1BD6 /* Server.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		CFB6438D1DB67C4C008C1BD6 /* ParameterEncoding */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6438E1DB67C4C008C1BD6 /* ParameterEncoding.swift */,
+			);
+			path = ParameterEncoding;
+			sourceTree = "<group>";
+		};
+		CFB6438F1DB67C4C008C1BD6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CFB643901DB67C4C008C1BD6 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CFB643911DB67C4C008C1BD6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6445D1DB687C9008C1BD6 /* Pokemon Detail */,
+				CFB644581DB681EC008C1BD6 /* Pokemons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFB6444D1DB67D3C008C1BD6 /* Pokemon */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6444E1DB67D55008C1BD6 /* Pokemon.swift */,
+			);
+			name = Pokemon;
+			sourceTree = "<group>";
+		};
+		CFB644551DB680D3008C1BD6 /* Pokemon */ = {
+			isa = PBXGroup;
+			children = (
+				CFB644561DB680F4008C1BD6 /* PokemonTableViewCell.swift */,
+			);
+			name = Pokemon;
+			sourceTree = "<group>";
+		};
+		CFB644581DB681EC008C1BD6 /* Pokemons */ = {
+			isa = PBXGroup;
+			children = (
+				CFB644591DB681EC008C1BD6 /* PokemonsViewController.swift */,
+				CFB6445A1DB681EC008C1BD6 /* PokemonsViewController.xib */,
+			);
+			path = Pokemons;
+			sourceTree = "<group>";
+		};
+		CFB6445D1DB687C9008C1BD6 /* Pokemon Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6445E1DB6880D008C1BD6 /* PokemonDetailViewController.swift */,
+				CFB6445F1DB6880D008C1BD6 /* PokemonDetailViewController.xib */,
+			);
+			name = "Pokemon Detail";
+			sourceTree = "<group>";
+		};
+		CFB644621DB694CE008C1BD6 /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				CFB644631DB694CE008C1BD6 /* ValueTransformer.swift */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
+		CFB644691DB69A86008C1BD6 /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				CFB6446A1DB69A86008C1BD6 /* ContextObserver.swift */,
+			);
+			name = Observers;
+			path = VOIQ/Observers;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFB643151DB67A26008C1BD6 /* VOIQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB643361DB67A26008C1BD6 /* Build configuration list for PBXNativeTarget "VOIQ" */;
+			buildPhases = (
+				67C6BEB8F339720BD9D80692 /* [CP] Check Pods Manifest.lock */,
+				CFB643121DB67A26008C1BD6 /* Sources */,
+				CFB643131DB67A26008C1BD6 /* Frameworks */,
+				CFB643141DB67A26008C1BD6 /* Resources */,
+				4DCF21E7EA54CAF0F0971D55 /* [CP] Embed Pods Frameworks */,
+				D8926CC5A73A797ACD2D93E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VOIQ;
+			productName = VOIQ;
+			productReference = CFB643161DB67A26008C1BD6 /* VOIQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFB6432C1DB67A26008C1BD6 /* VOIQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB643391DB67A26008C1BD6 /* Build configuration list for PBXNativeTarget "VOIQTests" */;
+			buildPhases = (
+				69761681D0605B57F2FC5BB8 /* [CP] Check Pods Manifest.lock */,
+				CFB643291DB67A26008C1BD6 /* Sources */,
+				CFB6432A1DB67A26008C1BD6 /* Frameworks */,
+				CFB6432B1DB67A26008C1BD6 /* Resources */,
+				3ECF660CB29FE8EF5097B7FE /* [CP] Embed Pods Frameworks */,
+				8DEDF3E380FD7622665B9D82 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFB6432F1DB67A26008C1BD6 /* PBXTargetDependency */,
+			);
+			name = VOIQTests;
+			productName = VOIQTests;
+			productReference = CFB6432D1DB67A26008C1BD6 /* VOIQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFB6430E1DB67A26008C1BD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = TPaga;
+				TargetAttributes = {
+					CFB643151DB67A26008C1BD6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					CFB6432C1DB67A26008C1BD6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CFB643151DB67A26008C1BD6;
+					};
+				};
+			};
+			buildConfigurationList = CFB643111DB67A26008C1BD6 /* Build configuration list for PBXProject "VOIQ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFB6430D1DB67A26008C1BD6;
+			productRefGroup = CFB643171DB67A26008C1BD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFB643151DB67A26008C1BD6 /* VOIQ */,
+				CFB6432C1DB67A26008C1BD6 /* VOIQTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFB643141DB67A26008C1BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB6445C1DB681EC008C1BD6 /* PokemonsViewController.xib in Resources */,
+				CFB643271DB67A26008C1BD6 /* LaunchScreen.storyboard in Resources */,
+				CFB643241DB67A26008C1BD6 /* Assets.xcassets in Resources */,
+				CFB644611DB6880D008C1BD6 /* PokemonDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB6432B1DB67A26008C1BD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ECF660CB29FE8EF5097B7FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VOIQTests/Pods-VOIQTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DCF21E7EA54CAF0F0971D55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VOIQ/Pods-VOIQ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67C6BEB8F339720BD9D80692 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69761681D0605B57F2FC5BB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8DEDF3E380FD7622665B9D82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VOIQTests/Pods-VOIQTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8926CC5A73A797ACD2D93E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VOIQ/Pods-VOIQ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFB643121DB67A26008C1BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB643E11DB67C4C008C1BD6 /* BaseGroupOperation.swift in Sources */,
+				CFB644081DB67C4C008C1BD6 /* NSFetchedResultsController+Additions.swift in Sources */,
+				CFB644061DB67C4C008C1BD6 /* ManagedObjectConvertible+Additions.swift in Sources */,
+				CFB6444F1DB67D55008C1BD6 /* Pokemon.swift in Sources */,
+				CFB6445B1DB681EC008C1BD6 /* PokemonsViewController.swift in Sources */,
+				CFB644001DB67C4C008C1BD6 /* FetchedResultsDataProvider.swift in Sources */,
+				CFB643EF1DB67C4C008C1BD6 /* ParseOperation.swift in Sources */,
+				CFB644641DB694CE008C1BD6 /* ValueTransformer.swift in Sources */,
+				CFB644161DB67C4C008C1BD6 /* Server.swift in Sources */,
+				CFB644601DB6880D008C1BD6 /* PokemonDetailViewController.swift in Sources */,
+				CFB644051DB67C4C008C1BD6 /* ContextObservable+Additions.swift in Sources */,
+				CFB644661DB6965B008C1BD6 /* GetSpritesOperation.swift in Sources */,
+				CFB644071DB67C4C008C1BD6 /* ModelConvertible+Additions.swift in Sources */,
+				CFB644041DB67C4C008C1BD6 /* ApplicationStateObserving+Additions.swift in Sources */,
+				CFB643F81DB67C4C008C1BD6 /* AppDelegate.swift in Sources */,
+				CFB644191DB67C4C008C1BD6 /* ParameterEncoding.swift in Sources */,
+				CFB644091DB67C4C008C1BD6 /* NSManagedObjectContext+Additions.swift in Sources */,
+				CFB6446B1DB69A86008C1BD6 /* ContextObserver.swift in Sources */,
+				CFB644681DB6972B008C1BD6 /* ParseGetSpriteOperation.swift in Sources */,
+				CFB644571DB680F4008C1BD6 /* PokemonTableViewCell.swift in Sources */,
+				CFB643DF1DB67C4C008C1BD6 /* AlertOperation.swift in Sources */,
+				CFB644031DB67C4C008C1BD6 /* TableViewDatasource.swift in Sources */,
+				CFB643FE1DB67C4C008C1BD6 /* AppConfiguration.swift in Sources */,
+				CFB643FA1DB67C4C008C1BD6 /* Protocols.swift in Sources */,
+				CFB643ED1DB67C4C008C1BD6 /* LoadingIndicatorObserver.swift in Sources */,
+				CFB643221DB67A26008C1BD6 /* VOIQ.xcdatamodeld in Sources */,
+				CFB643E91DB67C4C008C1BD6 /* GetPokemonsOperation.swift in Sources */,
+				CFB6441A1DB67C4C008C1BD6 /* Utils.swift in Sources */,
+				CFB6440F1DB67C4C008C1BD6 /* URLCredentialStorage+Additions.swift in Sources */,
+				CFB644101DB67C4C008C1BD6 /* ViewController+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB643291DB67A26008C1BD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB643321DB67A26008C1BD6 /* VOIQTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFB6432F1DB67A26008C1BD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFB643151DB67A26008C1BD6 /* VOIQ */;
+			targetProxy = CFB6432E1DB67A26008C1BD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFB643251DB67A26008C1BD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFB643261DB67A26008C1BD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFB643341DB67A26008C1BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFB643351DB67A26008C1BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFB643371DB67A26008C1BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DD633E2634921B9897F45D /* Pods-VOIQ.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VOIQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VOIQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CFB643381DB67A26008C1BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 327E2E2F951AB7F570930A80 /* Pods-VOIQ.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VOIQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VOIQ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CFB6433A1DB67A26008C1BD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 996E2E820828166F3BCE4110 /* Pods-VOIQTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VOIQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VOIQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VOIQ.app/VOIQ";
+			};
+			name = Debug;
+		};
+		CFB6433B1DB67A26008C1BD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DE9D9AAA89D287C8743DCF2 /* Pods-VOIQTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VOIQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VOIQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VOIQ.app/VOIQ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFB643111DB67A26008C1BD6 /* Build configuration list for PBXProject "VOIQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB643341DB67A26008C1BD6 /* Debug */,
+				CFB643351DB67A26008C1BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB643361DB67A26008C1BD6 /* Build configuration list for PBXNativeTarget "VOIQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB643371DB67A26008C1BD6 /* Debug */,
+				CFB643381DB67A26008C1BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB643391DB67A26008C1BD6 /* Build configuration list for PBXNativeTarget "VOIQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB6433A1DB67A26008C1BD6 /* Debug */,
+				CFB6433B1DB67A26008C1BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CFB643201DB67A26008C1BD6 /* VOIQ.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFB643211DB67A26008C1BD6 /* VOIQ.xcdatamodel */,
+			);
+			currentVersion = CFB643211DB67A26008C1BD6 /* VOIQ.xcdatamodel */;
+			path = VOIQ.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CFB6430E1DB67A26008C1BD6 /* Project object */;
+}

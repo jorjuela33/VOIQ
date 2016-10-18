@@ -1,0 +1,6 @@
+framework module Pods_VOIQ {
+  umbrella header "Pods-VOIQ-umbrella.h"
+
+  export *
+  module * { export * }
+}

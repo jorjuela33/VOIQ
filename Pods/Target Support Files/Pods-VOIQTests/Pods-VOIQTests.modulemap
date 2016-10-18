@@ -1,0 +1,6 @@
+framework module Pods_VOIQTests {
+  umbrella header "Pods-VOIQTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
