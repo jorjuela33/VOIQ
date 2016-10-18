@@ -1,9 +1,9 @@
 //
 //  VOIQTests.swift
-//  VOIQTests
+//  VOIQ
 //
 //  Created by Jorge Orjuela on 10/18/16.
-//  Copyright © 2016 TPaga. All rights reserved.
+//  Copyright © 2016 VOIQ. All rights reserved.
 //
 
 import XCTest

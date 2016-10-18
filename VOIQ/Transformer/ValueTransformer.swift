@@ -1,9 +1,9 @@
 //
 //  ValueTransformer.swift
-//  tpaga
+//  VOIQ
 //
-//  Created by Jorge Orjuela on 9/24/16.
-//  Copyright © 2016 TPaga. All rights reserved.
+//  Created by Jorge Orjuela on 10/18/16.
+//  Copyright © 2016 VOIQ. All rights reserved.
 //
 
 import Foundation
